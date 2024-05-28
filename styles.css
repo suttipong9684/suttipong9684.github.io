@@ -1,0 +1,104 @@
+
+.navbar__border--style{
+
+    border-bottom:3px solid rgb(255, 207, 103);
+    
+}
+
+.navbar__brand--color{
+    color: rgb(0, 0, 156);
+}
+
+.navbar__menu--color a{
+    color: rgb(0, 0, 156);
+}
+
+.navbar__menu--color a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.navbar__menu--color a:active{
+    color: rgb(255, 255, 255);
+}
+
+.carousel-caption--color h1{
+    
+    color: rgb(255, 174, 0);
+}
+
+.carousel-caption--color p{
+    
+    color: rgb(255, 255, 255);
+}
+.carousel__img{
+    width: 100%;
+    height: 300px;
+    
+}
+
+.promotion--hover img{
+    max-width: 19rem;
+    max-height: 10rem;
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    background-color: black;
+    padding: 0px 5px;
+    margin: 5px;
+    font-weight: bold;
+
+}
+
+
+.img__product{
+    margin-top: -5px;
+}
+
+.form__confirm{
+    display: none;
+}
+
+@media (max-width:990px) {
+    .carousel-caption--color h1{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(255, 174, 0);
+        background-color: rgba(0, 0, 0, 0.329);
+        position: relative;
+        top: 20px;
+        
+    }
+
+    .carousel-caption--color h6{
+        position: relative;
+        left: 100px;
+        top: 20px;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+    .carousel-caption--color p{
+
+        display: none;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.329);
+        text-align: start;
+        text-indent:30px;
+        
+    }
+
+    .carousel__img{
+        width: auto;
+        height: 200px;
+    }
+
+    .promotion--hover img{
+        margin-top: 5px;
+        width: 100%;
+        height: 100%;
+        align-items: baseline;
+    }
+}

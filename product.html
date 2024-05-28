@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
+<script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+
 <body>
   <!-- หัว web -->
   <nav class="navbar flex-wrap py-3 navbar-expand-lg navber-light sticky-top bg-warning navbar__border--style">
@@ -27,6 +29,7 @@
       <form class="navbar-form__search d-flex justify-content-lg-center col-lg-7 col-12 mt-3 mt-lg-0" role="search">
         <input id="searchBar" class="form-control" placeholder="Search" aria-label="Search" />
       </form>
+
 
       <div class="col-lg-2 cocollapse navbar-collapse justify-content-lg-end align-items-center mt-lg-auto mt-2"
         id="navbar">
@@ -55,110 +58,17 @@
     </div>
   </nav>
 
-  <!-- carousel -->
-
-  <div class="container my-4 bg-body-tertiary">
-    <div class="row">
-      <div class="col">
-        <div class="carousel slide" id="carousel-slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <button data-bs-target="#carousel-slide" data-bs-slide-to="0" class="active"></button>
-
-            <button data-bs-target="#carousel-slide" data-bs-slide-to="1"></button>
-
-            <button data-bs-target="#carousel-slide" data-bs-slide-to="2"></button>
-          </ol>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/img/carousel/top-sale-1.webp" class="carousel__img" />
-
-              <div class="carousel-caption carousel-caption--color fw-bolder">
-                <h6 class="fw-bold">HOT</h6>
-                <h1 class="fw-bold">SAMSUNG ODYSSEY G5</h1>
-                <p>27" VA 2K 165Hz FREESYNC PREMIUM</p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img src="/img/carousel/top-sale-2.webp" class="carousel__img" />
-
-              <div class="carousel-caption carousel-caption--color">
-                <h6 class="fw-bold">HOT</h6>
-                <h1 class="fw-bold">PIXMA G3010</h1>
-                <p>
-                  เครื่องพิมพ์ไร้สาย ALL-IN-ONE แบบติดตั้งแทงค์หมึกเติมได้
-                </p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img src="/img/carousel/top-sale-3.webp" class="carousel__img" />
-
-              <div class="carousel-caption carousel-caption--color">
-                <h6 class="fw-bold">HOT</h6>
-                <h1 class="fw-bold">ACER NITRO GAMING V15 ANV15-51-574G</h1>
-                <p>
-                  INTEL CORE I5-13420H / RTX 4050 6GB / 16GB DDR5 / 512GB /
-                  WIN11
-                </p>
-              </div>
-            </div>
-
-            <!-- ปุ่มควบคุม carousel -->
-
-            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-slide">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-
-            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-slide">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- promotion -->
-
-  <div class="container bg-body-tertiary">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-6 p-0 d-flex flex-wrap bg-dark justify-content-center align-items-center text-light border rounded-3" style="height: 20vh; ">
-        <h1>Promotion Sale</h1>
-      </div>
-
-      <div class="col-12 col-lg-6 d-flex flex-wrap promotion--hover gap-3 text-center justify-content-center">
-
-        <div class="col-5 d-flex bg-warning justify-content-center align-items-center border rounded-3 px-2">
-          <h4>flash sale ทุกๆ 12 ชั่วโมง</h4>
-        </div>
-
-        <div class="col-5 d-flex bg-warning justify-content-center align-items-center border rounded-3 px-2">
-          <h4>Shop ครบ 1,000 บาท ลดเพิ่ม 900 บาท</h4>
-        </div>
-
-        <div class="col-5 d-flex bg-warning justify-content-center align-items-center border rounded-3 px-2">
-          <h4>Buy 1 Get 1 free</h4>
-        </div>
-
-        <div class="col-5 d-flex bg-warning justify-content-center align-items-center border rounded-3 px-2">
-          <h4>Web เพื่อการศึกษา</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container d-none">
+  <div class="container">
     <br>
     <div class="row">
 
       <div class="col d-flex justify-content-end">
 
         <div class="dropdown">
-          <button class="btn dropdown-toggle"  data-bs-toggle="dropdown">หมวดหมู่</button>
-    
+          <button class="btn dropdown-toggle" data-bs-toggle="dropdown">หมวดหมู่</button>
+
           <ul class="dropdown-menu">
+            
             <li id="btns">
 
             </li>
@@ -189,11 +99,11 @@
       </div>
 
       <div class="col d-flex flex-wrap justify-content-center gap-3" id="root">
-        
-    </div>
-  </div>
 
-  <!-- modal cart -->
+      </div>
+    </div>
+
+    <!-- modal cart -->
 
   <div class="modal fade" id="showcart">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -201,14 +111,11 @@
 
         <div class="modal-header bg-warning ">
           <h3 class="fw-bold navbar__brand--color"><span style="color: red">Office</span> Store  |  Cart</h3>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
         </div>
 
         <div class="modal-body">
-          <div class="container">
-            <div class="sidebar">
-              <div class="head">
- 
-              </div>
+
               <div id="cartItem" class="my-3 text-center">Your cart is empty</div>
 
               <div class="foot d-flex justify-content-around align-items-baseline py-3">
@@ -216,13 +123,12 @@
                 <h2 id="total" class="text-danger">฿ 0.00</h2>
               </div>
 
-            </div>
+
             <div class="modal-footer " id="modalfooter">
               <button class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
 
               <button href="#formconfirm" class="btn btn-warning" data-bs-toggle="collapse" onclick="formconfirm()">ยืนยันคำสั่งซื้อ</button>
               
-
             </div>
 
             <!-- collapse ชำระเงิน -->
@@ -270,11 +176,24 @@
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <div class="container">
+    <nav class="mt-5 d-flex justify-content-center">
+      <ul class="pagination ">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
